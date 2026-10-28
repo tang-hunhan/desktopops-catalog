@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "description": "DesktopOps 远程模块目录。由后台管理页维护，Windows/Mac 版 app 启动时拉取。仅存元数据，不含权重/可执行文件；模块在点「安装」时才从 GitHub 拉取。",
+  "categories": [
+    "视频剪辑",
+    "语音配音",
+    "图像处理",
+    "图像生成",
+    "效率办公",
+    "AI 对话",
+    "下载工具",
+    "系统工具",
+    "影音播放",
+    "开发工具"
+  ],
+  "modules": [
+    {
+      "id": "goutoujunshi",
+      "name": "狗头军师",
+      "category": "AI 对话",
+      "tags": [
+        "恋爱",
+        "军师",
+        "情绪支持",
+        "话术",
+        "关系分析"
+      ],
+      "desc": "恋爱军师：帮你接住情绪、分析关系，给出能直接发的话术。",
+      "repo": "https://github.com/shengjidaguai-china/goutoujunshi",
+      "homepage": "https://github.com/shengjidaguai-china/goutoujunshi",
+      "license": "MIT",
+      "stars": 8762,
+      "lang": "Python",
+      "size_gb": 0,
+      "min_ram_gb": 4,
+      "needs_gpu": false,
+      "persona": true,
+      "persona_file": "SKILL.md",
+      "install": {
+        "type": "git_clone",
+        "url": "https://github.com/shengjidaguai-china/goutoujunshi.git",
+        "setup": [],
+        "models_note": "本机 AI 驱动，需要先在小v 里下载并准备好 AI 大脑（约 2GB）。"
+      },
+      "launch": {
+        "cmd": null,
+        "port": null,
+        "url": "/persona_chat.html?mid=goutoujunshi"
+      },
+      "license_source": "github-api",
+      "hidden": false,
+      "platforms": [
+        "windows",
+        "mac"
+      ]
+    },
+    {
+      "id": "gh-yt-dlp-yt-dlp",
+      "name": "yt-dlp",
+      "category": "下载工具",
+      "tags": [
+        "cli",
+        "downloader",
+        "python",
+        "sponsorblock",
+        "youtube-dl"
+      ],
+      "desc": "功能最强的命令行视频下载器（YouTube 等上千个网站）",
+      "repo": "https://github.com/yt-dlp/yt-dlp",
+      "homepage": "https://github.com/yt-dlp/yt-dlp",
+      "license": "Unlicense",
+      "stars": 200203,
+      "lang": "Python",
+      "size_gb": 0,
+      "min_ram_gb": 4,
+      "needs_gpu": false,
+      "conditions": [],
+      "install": {
+        "type": "auto",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "setup": [],
+        "models_note": "",
+        "asset_url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.10.21/yt-dlp.exe",
+        "asset_name": "yt-dlp.exe",
+        "asset_url_mac": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.10.21/yt-dlp_macos",
+        "asset_name_mac": "yt-dlp_macos"
+      },
+      "launch": {
+        "cmd": null,
+        "port": null,
+        "url": null
+      },
+      "license_source": "github-api",
+      "hidden": false,
+      "platforms": [
+        "windows",
+        "mac"
+      ]
+    }
+  ]
+}
